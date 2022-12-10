@@ -1524,6 +1524,23 @@ a {
   display: none;
 }
 
+.current {
+  position: relative;
+  color: var(--text-accent);
+}
+@media screen and (min-width: 768px) {
+  .current::after {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    content: "";
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--text-accent);
+  }
+}
+
 .mobile__link {
   font-family: "Roboto";
   font-style: normal;
@@ -1533,9 +1550,7 @@ a {
   letter-spacing: 0.02em;
   color: #212121;
   display: block;
-}
-.mobile__link:not(last-child) {
-  margin-bottom: 32px;
+  padding-bottom: 28px;
 }
 
 .mobile__tel {
