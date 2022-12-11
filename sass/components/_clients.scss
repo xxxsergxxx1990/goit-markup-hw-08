@@ -29,20 +29,23 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    
+    margin-right: -30px;
         
    .clients__item{
-
-    @media screen and (max-width: 768px) {
-        flex-basis: calc((100% - 2 * 30px) / 2);
-    }
-    @media screen and (max-width: 1200px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+   
+    @media screen and (min-width: 768px) {
         flex-basis: calc((100% - 3 * 30px) / 3);
-    }
-    @media screen and (min-width: 1200px) {
         
     }
+   
+    @media screen and (min-width: 1200px) {
+        flex-basis: auto;
+       
+    }
+    
    }
+
 }
 
 .clients__link{
