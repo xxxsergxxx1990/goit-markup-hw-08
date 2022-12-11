@@ -1,5 +1,5 @@
 .mobile {
-        
+        display: flex;
         position: absolute;
         top: 100%;
         width: 100%;
@@ -21,6 +21,7 @@
         transform:translateX(0) ;
         
         margin-left: 0;
+        
         }
          
         @media screen and(min-width:768px) {
@@ -28,7 +29,15 @@
             
         }
       }
-      
+
+.mobile__flex{
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+}
+.mobile__list{
+    margin-bottom: auto;
+}
 .mobile-btn{
    
     background-color: transparent;
@@ -94,7 +103,7 @@ padding-bottom: 28px;
   }
   .mobile__tel{
     display: block;
-    margin-top: 300px;
+    
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;

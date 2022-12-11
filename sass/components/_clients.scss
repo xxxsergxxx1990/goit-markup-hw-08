@@ -1,10 +1,10 @@
 .clients{
    padding-top: 60px;
-   padding-bottom: 60px;
+   padding-bottom: 30px;
    
         @media screen and (min-width: 1200px) {
             padding-top: 94px;
-            padding-bottom: 94px;
+            padding-bottom: 64px;
     }
 }
 .clients__tittle{
@@ -29,7 +29,7 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    margin-right: -30px;
+    
         
    .clients__item{
 
@@ -50,7 +50,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    fill: var(--text-secondColor);
+    fill: #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     transition-duration: 250ms;
