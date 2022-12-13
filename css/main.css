@@ -330,13 +330,13 @@ a {
   background-repeat: no-repeat;
   max-width: 1600px;
   display: block;
-}
-.hero__decor {
   padding-bottom: 118px;
+  padding-top: 118px;
 }
 @media screen and (min-width: 1200px) {
-  .hero__decor {
+  .hero {
     padding-bottom: 200px;
+    padding-top: 200px;
   }
 }
 
@@ -350,13 +350,11 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding-top: 118px;
 }
 @media screen and (min-width: 1200px) {
   .hero__tittle {
     font-size: 44px;
     line-height: 1.36;
-    padding-top: 200px;
   }
 }
 
@@ -388,6 +386,12 @@ a {
 @media screen and (min-width: 480px) {
   .benefits {
     padding-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .benefits {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -456,10 +460,16 @@ a {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-top: 30px;
   color: #212121;
+}
+@media screen and (min-width: 768px) {
+  .benefits__tittle {
+    text-align: start;
+  }
 }
 
 .benefits__text {
@@ -532,10 +542,16 @@ a {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .team {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -594,6 +610,9 @@ a {
     margin-left: 30px;
     margin-top: 30px;
   }
+  .team__item:not(last-child) {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .team__item {
@@ -620,12 +639,6 @@ a {
   padding-top: 30px;
   padding-bottom: 24px;
 }
-@media screen and (min-width: 1200px) {
-  .team__content {
-    padding: 30px 32px;
-  }
-}
-
 .team__name {
   font-family: "Roboto";
   font-style: normal;
@@ -730,7 +743,11 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-right: -30px;
+}
+@media screen and (min-width: 480px) {
+  .clients__list {
+    margin-right: -30px;
+  }
 }
 .clients__list .clients__item {
   -ms-flex-preferred-size: calc((100% - 60px) / 2);
@@ -771,10 +788,6 @@ a {
   transition-property: border-color;
   width: 210px;
 }
-.clients__link:not(last-child) {
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
 .clients__link:hover, .clients__link:focus {
   border-color: var(--text-accent);
   fill: var(--text-accent);
@@ -782,6 +795,10 @@ a {
 @media screen and (min-width: 480px) {
   .clients__link {
     width: 210px;
+  }
+  .clients__link:not(last-child) {
+    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -799,12 +816,8 @@ a {
 .foot {
   background-color: #2F303A;
   position: relative;
-}
-@media screen and (min-width: 480px) {
-  .foot {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .foot__centr {
@@ -935,6 +948,7 @@ a {
 @media screen and (min-width: 1200px) {
   .foot__tel {
     text-align: start;
+    margin-bottom: 0;
   }
 }
 

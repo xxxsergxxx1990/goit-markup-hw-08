@@ -1,9 +1,10 @@
 .foot{
     background-color: #2F303A;
     position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
     @media screen and (min-width: 480px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
+     
     }
         @media screen and (min-width: 768px) {
         
@@ -135,7 +136,7 @@ margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
     text-align:start;
-        
+        margin-bottom: 0;
     }
 }
 .foot__container{
